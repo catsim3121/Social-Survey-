@@ -103,6 +103,61 @@ barchartGC(partyid_table, type="percent", main= "Party ID vs. Gun ownership")
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+Education vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(educ_table)
+```
+
+Belief in God  vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(god_table)
+```
+
+Race vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(race_table)
+```
+
+Sex vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(sex_table)
+```
+
+Political views vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(polviews_table)
+```
+
+Capital punishment vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(cappun_table)
+```
+
+Degree vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(degree_table)
+```
+
+Bible vs. Gun ownerhsip two-way table: 
+
+```{r}
+rowPerc(bible_table)
+```
+
+Party ID vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(partyid_table)
+```
+
+
 # Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
