@@ -35,14 +35,6 @@ source("Import_GSS_2014_haven.R")
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
-Education vs. Gun ownership bar chart: 
-
-```{r}
-educ_table=xtabs(~edlevel + owngun, data=n2014,exclude = "NA")
-barchartGC(educ_table, data= n2014, type="percent", main="Education vs. Gun ownership")
-```
-
-All the groups in the graph have more people that said no to gun ownership. Jr. high students had the lowest amount of people that said yes to gun ownership. 
 
 Belief in God vs. Gun ownership bar chart: 
 
@@ -89,48 +81,12 @@ barchartGC(cappun_table,type="percent", main= "Capital punishment vs. Gun owners
 
 All groups have more people that do not own guns. The people that oppose capital punishment have a higher amount of people that said no to gun ownership. The people that favor capital punishment have a higher amount of people that own guns. 
 
-Degree vs. Gun ownsership bar chart: 
 
-```{r}
-degree_table=xtabs(~degree + owngun,data=n2014,exclude = "NA")
-barchartGC(degree_table,type="percent", main= "Degree vs. Gun ownership")
-```
-
-All groups have more people that said no to gun ownership. Lt. high school have the highest amount of people that do not own guns while college has the highest amount of people that do own guns. 
-
-Bible vs. Gun ownership bar chart: 
-
-```{r}
-bible_table=xtabs(~bible + owngun, data=n2014,exclude = "NA")
-barchartGC(bible_table,type="percent", main= "Bible vs. Gun ownership")
-```
-
-All groups have more people that said no to gun ownership. The people that said yes or no to gun ownership were relatively the same for both groups. 
-
-Party ID vs. Gun ownership bar chart: 
-
-```{r}
-partyid_table=xtabs(~partyid + owngun, data=n2014,exclude = "NA")
-barchartGC(partyid_table, type="percent", main= "Party ID vs. Gun ownership")
-```
-
-The democrats and independants have more people that said no to gun ownership. The democrats having the highest amount of people that said no to gun ownership. The republicans have an equal amount of people that said yes or no to gun ownership. Republicans have the highest amount of people that said yes to gun ownership. 
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
-Education vs. Gun ownership two-way table: 
-
-```{r}
-rowPerc(educ_table)
-```
-
-For the college group, 32.29% own guns while 67.71% don't own guns. 
-
-For the jr. college group, 36.04% own guns while 63.96% don't own guns. 
-
-For the jr. high group, 20.00% own guns while 80.00% don't own guns. 
 
 Belief in God  vs. Gun ownership two-way table: 
 
@@ -188,43 +144,6 @@ For people that favor capital punishment, 41.44% own guns while 58.56% don't own
 
 For people that oppose capital punishment, 20.58% own guns while 79.42% don't own guns. 
 
-Degree vs. Gun ownership two-way table: 
-
-```{r}
-rowPerc(degree_table)
-```
-
-For the lt. high school group, 18.42% own guns while 81.58% say no to gun ownership. 
-
-For the high school group, 36.55% own guns while 63.45% don't own guns. 
-
-For the junior college group, 38.36% own guns while 61.64% don't own guns. 
-
-For the bachelor group, 31.35% own guns while 68.65% don't own guns. 
-
-For the graduate group, 33.47% own guns while 66.53% don't own guns. 
-
-Bible vs. Gun ownerhsip two-way table: 
-
-```{r}
-rowPerc(bible_table)
-```
-
-For the people that read the Word of God, 33.05% say yes to gun ownership while 66.95% say no to gun ownership. 
-
-For the people that read Book of Fables, 33.85% say yes to gun ownership while 66.15% say no to gun ownership. 
-
-Party ID vs. Gun ownership two-way table: 
-
-```{r}
-rowPerc(partyid_table)
-```
-
-For the democrats, 23.09% sai yes to gun ownership while 76.91% said no to gun ownership. 
-
-For the independants, 32.47% said yes to gun ownership while 67.53% said no to gun ownership. 
-
-For the republicans, 50.00% said yes to gun ownership and 50.00% said no to gun ownership. 
 
 # Inferential Results
 
