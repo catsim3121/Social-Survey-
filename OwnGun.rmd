@@ -42,12 +42,16 @@ educ_table=xtabs(~edlevel + owngun, data=n2014,exclude = "NA")
 barchartGC(educ_table, data= n2014, type="percent", main="Education vs. Gun ownership")
 ```
 
+All the groups in the graph have more people that said no to gun ownership. Jr. high students had the lowest amount of people that said yes to gun ownership. 
+
 Belief in God vs. Gun ownership bar chart: 
 
 ```{r}
 god_table=xtabs(~god + owngun, data=n2014,exclude = "NA")
 barchartGC(god_table,type="percent", main="Belief in God vs. Gun ownership")
 ```
+
+All groups in the graph have more people that said no to gun ownership. They all relatively have the same amount of people that said yes to gun ownership. 
 
 Race vs. Gun ownership bar chart: 
 
@@ -56,12 +60,16 @@ race_table=xtabs(~race + owngun, data=n2014,exclude = "NA")
 barchartGC(race_table,type="percent", main="Race vs. Gun ownership")
 ```
 
+All groups have more people that said no to gun ownership. Other is the group with the highest amount of people that said no to gun ownership. People that identified as white have the highest amount of people that said yes to gun ownership. 
+
 Sex vs. Gun ownership bar chart: 
 
 ```{r}
 sex_table=xtabs(~sex + owngun, data=n2014,exclude = "NA")
 barchartGC(sex_table,type="percent", main="Sex vs. Gun ownership")
 ```
+
+More females said no to gun ownership than males while more males said yes to gun ownerhsip. For both groups more people said no to gun ownership. 
 
 Political views vs. Gun ownership bar chart: 
 
@@ -70,12 +78,16 @@ polviews_table=xtabs(~polviews + owngun, data=n2014,exclude = "NA")
 barchartGC(polviews_table,type="percent", main="Political views vs. Gun ownership")
 ```
 
+For all groups, more people said no to gun ownership. The liberals had the highest amount of people that said no to gun ownership. Conservatives have the highest group of people that said yes to gun ownership. 
+
 Capital punishment vs. Gun ownership bar chart: 
 
 ```{r}
 cappun_table=xtabs(~cappun + owngun, data=n2014,exclude = "NA")
 barchartGC(cappun_table,type="percent", main= "Capital punishment vs. Gun ownership")
 ```
+
+All groups have more people that do not own guns. The people that oppose capital punishment have a higher amount of people that said no to gun ownership. The people that favor capital punishment have a higher amount of people that own guns. 
 
 Degree vs. Gun ownsership bar chart: 
 
@@ -84,12 +96,16 @@ degree_table=xtabs(~degree + owngun,data=n2014,exclude = "NA")
 barchartGC(degree_table,type="percent", main= "Degree vs. Gun ownership")
 ```
 
+All groups have more people that said no to gun ownership. Lt. high school have the highest amount of people that do not own guns while college has the highest amount of people that do own guns. 
+
 Bible vs. Gun ownership bar chart: 
 
 ```{r}
 bible_table=xtabs(~bible + owngun, data=n2014,exclude = "NA")
 barchartGC(bible_table,type="percent", main= "Bible vs. Gun ownership")
 ```
+
+All groups have more people that said no to gun ownership. The people that said yes or no to gun ownership were relatively the same for both groups. 
 
 Party ID vs. Gun ownership bar chart: 
 
@@ -98,6 +114,7 @@ partyid_table=xtabs(~partyid + owngun, data=n2014,exclude = "NA")
 barchartGC(partyid_table, type="percent", main= "Party ID vs. Gun ownership")
 ```
 
+The democrats and independants have more people that said no to gun ownership. The democrats having the highest amount of people that said no to gun ownership. The republicans have an equal amount of people that said yes or no to gun ownership. Republicans have the highest amount of people that said yes to gun ownership. 
 
 ### Numerical Descriptive Results
 
