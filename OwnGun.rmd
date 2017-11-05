@@ -35,6 +35,70 @@ source("Import_GSS_2014_haven.R")
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+Education vs. Gun ownership bar chart: 
+
+```{r}
+educ_table=xtabs(~edlevel + owngun, data=n2014,exclude = "NA")
+barchartGC(educ_table, data= n2014, type="percent", main="Education vs. Gun ownership")
+```
+
+Belief in God vs. Gun ownership bar chart: 
+
+```{r}
+god_table=xtabs(~god + owngun, data=n2014,exclude = "NA")
+barchartGC(god_table,type="percent", main="Belief in God vs. Gun ownership")
+```
+
+Race vs. Gun ownership bar chart: 
+
+```{r}
+race_table=xtabs(~race + owngun, data=n2014,exclude = "NA")
+barchartGC(race_table,type="percent", main="Race vs. Gun ownership")
+```
+
+Sex vs. Gun ownership bar chart: 
+
+```{r}
+sex_table=xtabs(~sex + owngun, data=n2014,exclude = "NA")
+barchartGC(sex_table,type="percent", main="Sex vs. Gun ownership")
+```
+
+Political views vs. Gun ownership bar chart: 
+
+```{r}
+polviews_table=xtabs(~polviews + owngun, data=n2014,exclude = "NA")
+barchartGC(polviews_table,type="percent", main="Political views vs. Gun ownership")
+```
+
+Capital punishment vs. Gun ownership bar chart: 
+
+```{r}
+cappun_table=xtabs(~cappun + owngun, data=n2014,exclude = "NA")
+barchartGC(cappun_table,type="percent", main= "Capital punishment vs. Gun ownership")
+```
+
+Degree vs. Gun ownsership bar chart: 
+
+```{r}
+degree_table=xtabs(~degree + owngun,data=n2014,exclude = "NA")
+barchartGC(degree_table,type="percent", main= "Degree vs. Gun ownership")
+```
+
+Bible vs. Gun ownership bar chart: 
+
+```{r}
+bible_table=xtabs(~bible + owngun, data=n2014,exclude = "NA")
+barchartGC(bible_table,type="percent", main= "Bible vs. Gun ownership")
+```
+
+Party ID vs. Gun ownership bar chart: 
+
+```{r}
+partyid_table=xtabs(~partyid + owngun, data=n2014,exclude = "NA")
+barchartGC(partyid_table, type="percent", main= "Party ID vs. Gun ownership")
+```
+
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
