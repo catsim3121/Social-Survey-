@@ -126,11 +126,23 @@ Education vs. Gun ownership two-way table:
 rowPerc(educ_table)
 ```
 
+For the college group, 32.29% own guns while 67.71% don't own guns. 
+
+For the jr. college group, 36.04% own guns while 63.96% don't own guns. 
+
+For the jr. high group, 20.00% own guns while 80.00% don't own guns. 
+
 Belief in God  vs. Gun ownership two-way table: 
 
 ```{r}
 rowPerc(god_table)
 ```
+
+For people that don't believe in God, 32.46% own guns while 67.54% don't own guns. 
+
+For the maybe group, 33.33% own guns while 66.67% don't own guns. 
+
+For people that do believe in God, 33.05% own guns while 66.95% don't own guns. 
 
 Race vs. Gun ownership two-way table: 
 
@@ -138,11 +150,21 @@ Race vs. Gun ownership two-way table:
 rowPerc(race_table)
 ```
 
+For people that identify as white, 39.01% own guns while 60.99% don't own guns. 
+
+For people that identify as black, 16.87% own guns while 83.13% don't own guns. 
+
+FOr the other group. 13.93% own guns while 86.07% don't own guns. 
+
 Sex vs. Gun ownership two-way table: 
 
 ```{r}
 rowPerc(sex_table)
 ```
+
+For males, 39.76% own guns while 60.24% don't own guns. 
+
+For females, 27.32% own guns while 72.68% don't own guns.
 
 Political views vs. Gun ownership two-way table: 
 
@@ -150,11 +172,21 @@ Political views vs. Gun ownership two-way table:
 rowPerc(polviews_table)
 ```
 
+For liberals, 24.52% own guns while 75.48% don't own guns. 
+
+For moderates, 33.20% own guns while 66.80% don't own guns. 
+
+For conservatives, 42.17% own guns while 57.83% don't own guns. 
+
 Capital punishment vs. Gun ownership two-way table: 
 
 ```{r}
 rowPerc(cappun_table)
 ```
+
+For people that favor capital punishment, 41.44% own guns while 58.56% don't own guns. 
+
+For people that oppose capital punishment, 20.58% own guns while 79.42% don't own guns. 
 
 Degree vs. Gun ownership two-way table: 
 
@@ -162,11 +194,25 @@ Degree vs. Gun ownership two-way table:
 rowPerc(degree_table)
 ```
 
+For the lt. high school group, 18.42% own guns while 81.58% say no to gun ownership. 
+
+For the high school group, 36.55% own guns while 63.45% don't own guns. 
+
+For the junior college group, 38.36% own guns while 61.64% don't own guns. 
+
+For the bachelor group, 31.35% own guns while 68.65% don't own guns. 
+
+For the graduate group, 33.47% own guns while 66.53% don't own guns. 
+
 Bible vs. Gun ownerhsip two-way table: 
 
 ```{r}
 rowPerc(bible_table)
 ```
+
+For the people that read the Word of God, 33.05% say yes to gun ownership while 66.95% say no to gun ownership. 
+
+For the people that read Book of Fables, 33.85% say yes to gun ownership while 66.15% say no to gun ownership. 
 
 Party ID vs. Gun ownership two-way table: 
 
@@ -174,6 +220,11 @@ Party ID vs. Gun ownership two-way table:
 rowPerc(partyid_table)
 ```
 
+For the democrats, 23.09% sai yes to gun ownership while 76.91% said no to gun ownership. 
+
+For the independants, 32.47% said yes to gun ownership while 67.53% said no to gun ownership. 
+
+For the republicans, 50.00% said yes to gun ownership and 50.00% said no to gun ownership. 
 
 # Inferential Results
 
