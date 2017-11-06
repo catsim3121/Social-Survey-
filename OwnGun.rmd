@@ -26,6 +26,28 @@ Was there a relationship between gun ownership and race or sex or political view
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+The data for the social survey has 3,842 observations with 12 different variables all from 2014 data. First the data needed to be organized, so the data was trimmed. An already made R code was used from another file. The select function from the dyplr package extracted the variables that will be used for analysis. The mutate function was used to create three variables for education level. The revalue function was used to organize the data in a better fashion in the following ways: 
+
+-The political views responses were extremely liberal, slightly liberal, extremely conservative, slightly conservative, IAP, and dk. IAP and dk are replaced with value NA
+
+-The responses for belief in God were don't believe and no way to find out changed to no and know God exists was changed to yes. The values some higher power, believe sometimes, believe but doubts and dk were changed to maybe. The response IAP was changed to NA 
+
+-The capital punishment responses yes and no stayed the same. The responses IAP and dk were changed to NA. 
+
+Variable analysis: 
+
+-Belief in God is a factor variable with four levels: no, yes, maybe, and NA. 
+
+-Race is a factor variable with three levels: white, black and other. 
+
+-Capital punishment is a factor variable with three levels: na, yes, and no.
+
+-Sex is a factor variable with two levels: male and female. 
+
+-Political views is a factor variable with three levels: liberals, moderates and conservatives.   
+ 
+All the NA responses will be ommitted when looking at the data. The data will be looked at numerically and graphically. The barcharts will be used for graphical and a two-way table for numerical results. The t-test will be used for the inferential results. 
+
 #Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
