@@ -47,3 +47,18 @@ source("Import_GSS_2014_haven.R")
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+After looking at the graphical, numerical and inferential results, we can conclude:
+-Belief in God and gun ownership are independant of each other. This means that there is no relationship between the variables.
+
+-Race and gun ownership are related. The white group and other group are more likely to own guns than the black group.
+
+-Sex and gun ownership are related. Males are more likely to own guns than females.
+
+-Opinion on capital punishment and gun ownership are related. People that favor capital punishment are more likley to own guns than people who oppose capital punishment.
+
+-Political views and gun ownership are related. Conservatives are more likely to own guns than the liberals and moderates.
+
+In conclusion, if there was a profile made on people who own guns. They are most likely going to be a conservative, who favors capital punishment, is male and either white or other. If there was a profile made on people who don’t guns, they are most likely to be female, oppose capital punishment, be liberal or moderate and black.
+
+A variable that could affect the results are whether people from this sample grew up around guns or have ever encountered a gun in their life.
