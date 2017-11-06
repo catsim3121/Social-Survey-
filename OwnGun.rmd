@@ -43,6 +43,81 @@ source("Import_GSS_2014_haven.R")
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+Although there are graphical and numerical results that provide evidence for our research question, it doesn’t provide enough. The chi-square test will provide the last piece of evidence needed to prove if there is in fact a relationship between gun ownership and the variables: race, sex, belief in God, opinion on capital puishment and political views.
+
+Belief in God vs.Gun ownership chi-square test:
+
+Hypotheses:
+
+H0: Gun ownership is independant of belief in God.
+
+Ha: Gun ownership and belief in God are not independant (related).
+
+```{r}
+god_table=xtabs(~god + owngun, data=n2014,exclude = "NA")
+chisqtestGC(god_table)
+```
+
+The chi-square statistic is 0.053. The p-value is 0.9739.This means the probablity of getting a sample like this under these conditions is about a 97% chance. Since the p-value is relatively high, we will fail to reject the null hypothesis and conclude that there is no relationship between the belief in God and gun ownership.
+
+Race vs.Gun ownership chi-square test:
+
+Hypotheses:
+
+H0: Gun ownership is independant of race. 
+
+Ha: Gun ownership and race are not independant (related).
+
+```{r}
+race_table=xtabs(~race + owngun, data=n2014,exclude = "NA")
+chisqtestGC(race_table)
+```
+
+The chi-square statistic is 6.1542. The p-value is 0. This means the probablity of getting a sample like this under these condition is extremely small if the null hypothesis is true. Therfore we reject the null hypothesis which means that there is a relationship between race and gun ownership. For example if you identify as white the greater the chance you will own a gun.
+
+Sex vs. Gun ownership chi-square test:
+
+Hypotheses:
+H0: Gun ownership is independant of sex. 
+
+Ha: Sex and Gun ownership are related (not independant).
+
+```{r}
+sex_table=xtabs(~sex + owngun, data=n2014,exclude = "NA")
+chisqtestGC(sex_table)
+```
+
+The chi-square statistic is 34.9146. The p-value is 0. This means the probablity of getting a sample like this under these condition is extremely small if the null hypothesis is true. Therfore we reject the null hypothesis which means that there is a relationship between sex and gun ownership. For example if you are male there is a greater chance you will own a gun.
+
+Capital punishment vs.Gun ownership chi-square test:
+
+Hypotheses:
+
+H0: Gun ownership is independant of opinion on capital punishment. 
+
+Ha: Opinion on capital punishment and gun ownership are related (not independant).
+
+```{r}
+cappun_table=xtabs(~cappun + owngun, data=n2014,exclude = "NA")
+chisqtestGC(cappun_table)
+```
+
+The chi-square statistic is 85.1602. The p-value is 0. This means the probablity of getting a sample like this under these condition is extremely small if the null hypothesis is true. Therfore we reject the null hypothesis which means that there is a relationship between sex and gun ownership. For example if you favor capital punishment there is a greater chance you will own a gun.
+
+Political views vs.Gun ownership chi-square test:
+
+Hypotheses:
+
+H0: Gun ownership is independant of political views. 
+
+Ha: Gun ownership and political views are related (not independant).
+
+```{r}
+polviews_table=xtabs(~polviews + owngun, data=n2014,exclude = "NA")
+chisqtestGC(polviews_table)
+```
+
+The chi-square statistic is 42.3848. The p-value is 0. This means the probablity of getting a sample like this under these condition is extremely small if the null hypothesis is true. Therfore we reject the null hypothesis which means that there is a relationship between political views and gun ownership. For example if you identify as conservative there is a greater chance you will own a gun.
 
 # Discussion and Conclusion
 
