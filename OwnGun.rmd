@@ -19,7 +19,8 @@ source("Import_GSS_2014_haven.R")
 
 ####This study deals with questions about possible relationships between gun ownership and race, sex, political views, opinions on capitol punishment and belief in god. The data is from the 2014 general social survey.
 
-
+The research question is: 
+Was there a relationship between gun ownership and race or sex or political views or opinions on capital punishment or belief in God in 2014? 
 
 # Methods
 
