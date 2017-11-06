@@ -58,9 +58,115 @@ All the NA responses will be ommitted when looking at the data. The data will be
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+
+Belief in God vs. Gun ownership bar chart: 
+
+```{r}
+god_table=xtabs(~god + owngun, data=n2014,exclude = "NA")
+barchartGC(god_table,type="percent", main="Belief in God vs. Gun ownership")
+```
+
+All groups in the graph have more people that said no to gun ownership. They all relatively have the same amount of people that said yes to gun ownership. 
+
+Race vs. Gun ownership bar chart: 
+
+```{r}
+race_table=xtabs(~race + owngun, data=n2014,exclude = "NA")
+barchartGC(race_table,type="percent", main="Race vs. Gun ownership")
+```
+
+All groups have more people that said no to gun ownership. Other is the group with the highest amount of people that said no to gun ownership. People that identified as white have the highest amount of people that said yes to gun ownership. 
+
+Sex vs. Gun ownership bar chart: 
+
+```{r}
+sex_table=xtabs(~sex + owngun, data=n2014,exclude = "NA")
+barchartGC(sex_table,type="percent", main="Sex vs. Gun ownership")
+```
+
+More females said no to gun ownership than males while more males said yes to gun ownerhsip. For both groups more people said no to gun ownership. 
+
+Political views vs. Gun ownership bar chart: 
+
+```{r}
+polviews_table=xtabs(~polviews + owngun, data=n2014,exclude = "NA")
+barchartGC(polviews_table,type="percent", main="Political views vs. Gun ownership")
+```
+
+For all groups, more people said no to gun ownership. The liberals had the highest amount of people that said no to gun ownership. Conservatives have the highest group of people that said yes to gun ownership. 
+
+Capital punishment vs. Gun ownership bar chart: 
+
+```{r}
+cappun_table=xtabs(~cappun + owngun, data=n2014,exclude = "NA")
+barchartGC(cappun_table,type="percent", main= "Capital punishment vs. Gun ownership")
+```
+
+All groups have more people that do not own guns. The people that oppose capital punishment have a higher amount of people that said no to gun ownership. The people that favor capital punishment have a higher amount of people that own guns. 
+
+
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
+Belief in God  vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(god_table)
+```
+
+For people that don't believe in God, 32.46% own guns while 67.54% don't own guns. 
+
+For the maybe group, 33.33% own guns while 66.67% don't own guns. 
+
+For people that do believe in God, 33.05% own guns while 66.95% don't own guns. 
+
+Race vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(race_table)
+```
+
+For people that identify as white, 39.01% own guns while 60.99% don't own guns. 
+
+For people that identify as black, 16.87% own guns while 83.13% don't own guns. 
+
+FOr the other group. 13.93% own guns while 86.07% don't own guns. 
+
+Sex vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(sex_table)
+```
+
+For males, 39.76% own guns while 60.24% don't own guns. 
+
+For females, 27.32% own guns while 72.68% don't own guns.
+
+Political views vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(polviews_table)
+```
+
+For liberals, 24.52% own guns while 75.48% don't own guns. 
+
+For moderates, 33.20% own guns while 66.80% don't own guns. 
+
+For conservatives, 42.17% own guns while 57.83% don't own guns. 
+
+Capital punishment vs. Gun ownership two-way table: 
+
+```{r}
+rowPerc(cappun_table)
+```
+
+For people that favor capital punishment, 41.44% own guns while 58.56% don't own guns. 
+
+For people that oppose capital punishment, 20.58% own guns while 79.42% don't own guns. 
+
 
 # Inferential Results
 
